@@ -1,0 +1,687 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: open sans;
+
+}
+body > *{
+    width:90%;
+    margin: 0 auto;
+}
+nav{
+    font-size: 14px;
+}
+.p-navbar{
+    position: relative;
+    padding: 10px 0px;
+    height: 50px;
+}
+.right-p-navbar{
+    position: absolute;
+right: 20px;
+}
+.right-p-navbar > li {
+    display: inline-block;
+    margin: 0px 10px;
+
+}
+.right-p-navbar > li > img{
+    transform: translateY(4px);
+}
+.s-navbar{
+    position: relative;
+    padding: 10px 0px;
+    transform: translateY(-40px);
+}
+.s-navbar > *{
+    display: inline-block;
+}
+.s-input{
+    border: 2px solid yellow;
+    border-radius: 30px;
+    overflow: hidden;
+    position: absolute;
+    left: 30%;
+    top: 70%;
+    transform: scale(1.2);
+}
+.s-navbar span:nth-child(1){
+    padding: 8px;
+}
+.s-navbar span:nth-child(3){
+    padding: 8px 10px;
+    background-color: yellow;
+
+}
+.s-navbar input{
+    border: none;
+    outline: none;
+    margin: 4px;
+    width: 300px;
+}
+.s-navbar ul{
+    position: absolute;
+    left: 70%;
+    top: 70%;
+    list-style: none;
+    font-size: 16px;
+}
+.s-navbar ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+header {
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header .heading {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: #ffda00;
+}
+
+
+header ul .heading-list {
+    float: left;
+    list-style: none;
+    padding: 8.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 18px;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+}
+
+header ul .heading-list:nth-last-of-type(4) {
+    background: black;
+    color: white;
+    padding: 7.35%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* side bar css */
+header .side-bar ul {
+    position: absolute;
+    top: 10%;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: .7%;
+    z-index: 2;
+    background: rgba(241, 239, 239, 0.897);
+    height: 100%;
+}
+
+header .side-bar ul li {
+    list-style: none;
+    font-size: 15px;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    margin:4% ;
+    color: lightslategray;
+}
+
+header .side-bar ul li:hover {
+    color: black;
+}
+
+ /* slider css start */
+
+.proslider  img {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.proslider  .wrapper {
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}
+
+.proslider  .slider {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 67.2vh;
+}
+
+.slide-switch {
+    display: none;
+}
+
+.slide-label {
+    position: absolute;
+    bottom: 1rem;
+    display: block;
+    z-index: 5;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-indent: 1rem;
+     overflow: hidden;
+    background: black;
+    border: 2px solid lightslategray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.25s;
+    top: 70%;
+}
+
+.slider-arrow {
+    position: absolute;
+    font-size: 25px;
+    color: rgb(72, 81, 90);
+    background: black;
+    padding: 2px 5px 2px 5px;
+    border-radius: 50%;
+    left: 68%;
+    border: 3px solid lightslategray;
+    top: 68%;
+    z-index: 5;
+}
+
+.end-arrow {
+    position: absolute !important;
+    left: 92.5% !important;
+}
+
+.slide-label:nth-last-of-type(6) {
+    right: 25%;
+    z-index: 5;
+}
+
+.slide-label:nth-last-of-type(5) {
+    right: 22%;
+    z-index: 5;
+}
+
+.slide-label:nth-last-of-type(4) {
+    right: 19%;
+    z-index: 5;
+}
+
+.slide-label:nth-last-of-type(3) {
+    right: 16%;
+    z-index: 5;
+}
+
+.slide-label:nth-last-of-type(2) {
+    right: 13%;
+    z-index: 5;
+}
+
+.slide-label:nth-last-of-type(1) {
+    right: 10%;
+    z-index: 5;
+}
+
+
+.slide-content {
+    width: 100%;
+    background: #fff;
+    float: left;
+    margin-right: -100%;
+    height: 100%;
+}
+
+.slide-switch:checked+.slide-label {
+    background: black;
+
+}
+
+.slide-switch:not(:checked)+.slide-label+.slide-content {
+    opacity: 0;
+    transition: opacity 0.35s;
+    pointer-events: none;
+}
+
+.slide-switch:checked+.slide-label+.slide-content {
+    animation: slide 1s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.collection > h1 {
+margin: 20px 0px;
+}
+.collection > h1 > i{
+    margin: 0px 6px 0px 0px;
+}
+#aside-img{
+   display: inline-block;
+height: 190px;
+width: 190px;
+overflow: hidden;
+margin: 0px 2px;
+position: relative;
+}
+.collection > #aside-img > img{
+position: absolute;
+max-height: 100%;
+}
+.collection > div.collect-img {
+display: inline-block;
+height: 185px;
+width: 195px;
+border: 1px solid rgba(0, 0, 0, 0.103);
+overflow: hidden;
+margin: 0px 2px;
+position: relative;
+text-align: center;
+}
+.collection > div.collect-img img{
+    max-height: 160px;
+}
+.collection > div.collect-img .hidden-num{
+width: 100%;
+background-color: #f30240;
+font-size: 18px;
+padding: 6px 0px;
+color: white;
+font-weight: bolder;
+transform: translateY(10px);
+transition: transform .5s;
+}
+.collection > div.collect-img:hover .hidden-num{
+    transform: translateY(-32px);
+}
+section img:hover{transform: scale(1.2);
+    transition-duration: 1s;
+
+}
+
+.super > h1 {
+margin: 20px 0px;
+}
+.super > h1 > i{
+    margin: 0px 6px 0px 0px;
+}
+#left-img{
+   
+ height: 300px;
+ width: 190px;
+ overflow: hidden;
+ margin: 0px 2px;
+ position: relative;
+ background-size: cover;
+ float: left;
+ }
+ #left-img img{
+     width: 100%;
+     height: 100%;
+ }
+ .super > #left-img > img{
+    position: absolute;
+    max-height: 100%;
+    }
+#right-img{
+    height: 300px;
+    width: 190px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.super > div.right-img {
+    display: inline-block;
+    height: 300px;
+    width: 195px;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    margin: 0px 2px;
+    position: relative;
+    text-align: center;
+    }
+    .super > div.right-img img{
+        max-height: 160px;
+    }
+    .super > div.right-img .prc h2{
+    width: 100%;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 6px 0px;
+    color: red;
+    
+    }
+    .right-img p{
+        margin-top: 30px;
+        color: rgb(46, 45, 45);
+        font-size: 14px;
+
+    }
+    .super > div.right-img .prc h3{
+    width:100% ;
+    font-size:14px ;
+    padding:6px 0px ;
+    color:gray;
+    font-weight: lighter;
+    text-decoration: line-through;
+    }
+    .off{
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border: 1px solid red;
+        border-radius: 50%;
+        position: relative;
+        z-index: 2;
+        float: right;
+        margin-top: -300px;
+     
+    }
+    .off h1{
+color: white;
+text-align: center;
+font-size: 16px;
+margin: 5px 2px;
+    }
+    .off h2{
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        margin: -2px 2px;
+        font-weight: lighter;
+            }
+            .super1 > h1 {
+                margin: 20px 0px;
+                }
+                .super1 > h1 > i{
+                    margin: 0px 6px 0px 0px;
+                }
+            #left1-img{
+   
+                height: 300px;
+                width: 400px;
+                overflow: hidden;
+                margin: 0px 2px;
+                position: relative;
+                background-size: cover;
+                float: left;
+                }
+                #left1-img img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .super1 > #left-img > img{
+                   position: absolute;
+                   max-height: 100%;
+                   }
+                   #right1-img{
+                    height: 300px;
+                    width: 170px;
+                    overflow: hidden;
+                    position: relative;
+                    float: left;
+                }
+                .super1 > div.right1-img {
+                    display: inline-block;
+                    height: 300px;
+                    width: 195px;
+                    border: 1px solid rgba(0, 0, 0, 0.103);
+                    margin: 0px 2px;
+                    position: relative;
+                    text-align: center;
+                    }
+                    .super1 > div.right1-img img{
+                        max-height: 160px;
+                    }
+                    .super1 > div.right1-img .prc1 h2{
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    padding: 6px 0px;
+                    color: red;
+                    
+                    }
+                    .right1-img p{
+                        margin-top: 30px;
+                        color: rgb(46, 45, 45);
+                        font-size: 14px;
+                
+                    }
+                    .super1 > div.right1-img .prc1 h3{
+                    width:100% ;
+                    font-size:14px ;
+                    padding:6px 0px ;
+                    color:gray;
+                    font-weight: lighter;
+                    text-decoration: line-through;
+                    }
+                    .off1{
+                        width: 50px;
+                        height: 50px;
+                        background-color: red;
+                        border: 1px solid red;
+                        border-radius: 50%;
+                        position: relative;
+                        z-index: 2;
+                        float: right;
+                        margin-top: -300px;
+                     
+                    }
+                    .off1 h1{
+                color: white;
+                text-align: center;
+                font-size: 16px;
+                margin: 5px 2px;
+                    }
+                    .off1 h2{
+                        color: white;
+                        text-align: center;
+                        font-size: 12px;
+                        margin: -2px 2px;
+                        font-weight: lighter;
+                            }
+                            .super2 > h1 {
+                                margin: 20px 0px;
+                                }
+                                .super2 > h1 > i{
+                                    margin: 0px 6px 0px 0px;
+                                }
+                                #left2-img{
+                                   
+                                 height: 300px;
+                                 width: 450px;
+                                 overflow: hidden;
+                                 margin: 0px 2px;
+                                 position: relative;
+                                 background-size: cover;
+                                 float: left;
+                                 }
+                                 #left2-img img{
+                                     width: 100%;
+                                     height: 100%;
+                                 }
+                                 .super2 > #left2-img > img{
+                                    position: absolute;
+                                    max-height: 100%;
+                                    }
+                                    #right2-img{
+                                        height: 300px;
+                                        width: 170px;
+                                        overflow: hidden;
+                                        position: relative;
+                                        float: left;
+                                    }
+                                    .super2 > div.right2-img {
+                                        display: inline-block;
+                                        height: 300px;
+                                        width: 230px;
+                                        border: 1px solid rgba(0, 0, 0, 0.103);
+                                        margin: 0px 2px;
+                                        position: relative;
+                                        text-align: center;
+                                        }
+                                        .super2 > div.right2-img img{
+                                            max-height: 160px;
+                                        }
+                                        .super3 > h1 {
+                                            margin: 20px 0px;
+                                            }
+                                            .super3 > h1 > i{
+                                                margin: 0px 6px 0px 0px;
+                                            }
+                                            #left3-img{
+                                               
+                                             height: 310px;
+                                             width: 200px;
+                                             overflow: hidden;
+                                             margin: 0px 2px;
+                                             position: relative;
+                                             background-size: cover;
+                                             float: left;
+                                             }
+                                             #left3-img img{
+                                                 width: 100%;
+                                                 height: 100%;
+                                             }
+                                             .super3 > #left3-img > img{
+                                                position: absolute;
+                                                max-height: 100%;
+                                                }
+                                                #right3-img{
+                                                    height: 300px;
+                                                    width: 130px;
+                                                    padding: 0px;
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    float: left;
+                                                }
+                                                .super3 > div.right3-img {
+                                                    display: inline-block;
+                                                    height: 300px;
+                                                    width: 130px;
+                                                    border: 1px solid rgba(0, 0, 0, 0.103);
+                                                    margin: 0px 30px;
+                                                    position: relative;
+                                                    text-align: center;
+                                                    }
+                                                    .super3 > div.right3-img img{
+                                                        max-height: 160px;
+                                                    }
+                                                    .right3-img h1{
+                                                        color: black;
+                                                        font-size: 16px;
+                                                        font-weight: lighter;
+                                                    }
+                                                    .right3-img h2{
+                                                        color: black;
+                                                        font-size: 16px;
+                                                        font-weight: lighter;
+                                                    }
+
+ #right4-img{
+                    height: 300px;
+                    width: 200px;
+                    overflow: hidden;
+                    position: relative;
+                    float: left;
+                }
+                .super4 > div.right4-img {
+                    display: inline-block;
+                    height: 300px;
+                    width: 233px;
+                    border: 1px solid rgba(0, 0, 0, 0.103);
+                    margin: 10px 2px;
+                    position: relative;
+                    text-align: center;
+                    }
+                    .super4 > div.right4-img img{
+                        max-height: 160px;
+                    }
+                    .super4 > div.right4-img .prc4 h2{
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    padding: 6px 0px;
+                    color: red;
+                    }
+                    .super4 > div.right4-img .prc4 h6{
+                        font-size: 12px;
+                        font-weight: lighter;
+                        color: red;
+                    }
+                    .right4-img p{
+                        margin-top: 30px;
+                        color: rgb(46, 45, 45);
+                        font-size: 14px;
+                
+                    }
+                    
+                    .off4{
+                        width: 50px;
+                        height: 50px;
+                        background-color: red;
+                        border: 1px solid red;
+                        border-radius: 50%;
+                        position: relative;
+                        z-index: 2;
+                        float: right;
+                        margin-top: -270px;
+                     
+                    }
+                    .off4 h1{
+                color: white;
+                text-align: center;
+                font-size: 16px;
+                margin: 5px 2px;
+                    }
+                    .off4 h2{
+                        color: white;
+                        text-align: center;
+                        font-size: 12px;
+                        margin: -2px 2px;
+                        font-weight: lighter;
+                            }
+.super5
+{
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    margin-top: 50px;
+    padding: 1px;
+}  
+.super5 h6{
+    color: gray;
+    text-align: center;
+}
+       .super5 i{
+        width: 15px;
+        height: 15px;
+        margin-top: 5px;
+           background-color: yellow;
+           color: black;
+           border: 1px solid transparent;
+           border-radius: 50%;
+           size: initial;
+           margin-left: 5px;
+       }                    
+       .down-navbar{
+        position: absolute;
+    left: 20px;
+    color:gray;
+    }
+    .down-navbar > li {
+        display: inline-block;
+        margin: 90px 20px;
+    
+    }
+    .down1-navbar{
+        position: absolute;
+left: 180px;
+color: gray;
+    }
+   .down1-navbar > li{
+       display: inline-block;
+       margin: 110px 20px;
+   }
